@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Averta';
+    src: url(AvertaDemo/AvertaDemo-Regular.otf);
+}
+
+body{
+    font-family: 'Averta', sans-serif;
+    font-size: 16px;
+}
+
+:root {
+    --color-primary:#e7332b;
+    --color-secondary:#514949;
+    --color-tertiary: #212529;
+    --color-neutral: #fffafa;
+    --color-white: #fff;
+}
+a{
+    text-decoration: none;
+}
+.primary-text{
+    color: var(--color-primary);
+}
+.primary-bg{
+    background-color: var(--color-primary);
+}
+.secondary-text{
+    color: var(--color-secondary);
+}
+.white-text{
+    color: var(--color-white);
+}
+.white-bg{
+    background-color: var(--color-white);
+}
+.align-text{
+    text-align: center;
+}
+
+/* HERO SECTION */
+.hero-container{
+    background: url('./assets/hero-bg.svg') no-repeat center center/cover;
+    min-height: 100vh;
+}
+
+.hero-header{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-header img{
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+}
+
+.cta{
+    margin-top: 4rem;
+    max-width: 700px;
+}
+
+.cta h1{
+    font-size: 28px;
+    width: 95%;
+    margin: 0 auto 2.5rem auto;
+}
+.cta-buttons, .cta p{
+    width: 95%;
+    margin: 0 auto;
+}
+.cta p{
+    line-height: 24px;
+    margin-bottom: 5rem;
+    opacity: 0.9;
+}
+.cta-buttons{
+    display: flex;
+    flex-direction: column;
+}
+.cta-btn{
+    padding: 0.8rem 0;
+    border: none;
+    margin: 0 auto 1.5rem auto;
+}
+.cta-btn a{
+    padding: 0.8rem 2rem;
+    font-size: 16px;
+}
+.cta-btn-2{
+    border: 1px solid var(--color-primary);
+    margin-bottom: 0;
+}
+
+
+@media (min-width: 768px){
+    .hero-header{
+        height: 90px;
+    }
+    .cta{
+        margin: 5rem auto;
+        padding: 1%;
+    }
+    .cta p{
+        width: 100%;
+    }
+    .cta h1{
+        font-size: 32px;
+        width: 100%;
+    }
+    .cta-buttons{
+        flex-direction: row;
+        align-items: center;
+        padding: 0 70px;
+        width: 100%;
+    }
+    .cta-btn{
+        margin-bottom: 0;
+    }
+    .hero-header img{
+        height: 22%;
+        width: 22%;
+        position: absolute;
+        bottom: 0;
+    }
+}
