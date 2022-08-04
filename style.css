@@ -16,6 +16,7 @@
 body{
     font-family: 'Averta', sans-serif;
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 :root {
@@ -114,7 +115,7 @@ a{
 .team-header h4{
     margin-bottom: 1rem;
     font-weight: 100;
-    font-size: 14px;
+    font-size: 12px;
 }
 .team-header h2{
     font-size: 24px;
@@ -141,6 +142,7 @@ a{
 .training p, .internship p, .talent p{
     line-height: 24px;
     margin-bottom: 1.5rem;
+    font-size: 13px;
 }
 
 @media (min-width: 768px){
@@ -176,6 +178,12 @@ a{
 
 }
 
+@media(min-width:768px) and (max-width:991px){
+    .hero-container{
+        min-height: 50vh;
+    }
+}
+
 @media(min-width: 992px){
     .zuri-groups{
         display: flex;
@@ -184,6 +192,9 @@ a{
     .team-container{
         margin-top: 9rem;
         position: relative;
+    }
+    .training p, .internship p, .talent p{
+        font-size: 14px;
     }
 }
 
