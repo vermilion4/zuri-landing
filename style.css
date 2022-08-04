@@ -8,6 +8,10 @@
     font-family: 'Averta';
     src: url(AvertaDemo/AvertaDemo-Regular.otf);
 }
+@font-face {
+    font-family: 'AvertaBold';
+    src: url(AvertaDemo/AvertaDemo-ExtraBoldItalic.otf);
+}
 
 body{
     font-family: 'Averta', sans-serif;
@@ -87,7 +91,7 @@ a{
     flex-direction: column;
 }
 .cta-btn{
-    padding: 0.8rem 0;
+    padding: 0.9rem 0;
     border: none;
     margin: 0 auto 1.5rem auto;
 }
@@ -100,6 +104,44 @@ a{
     margin-bottom: 0;
 }
 
+/* TEAM HEADER SECTION */
+.team-container{
+    margin-top: 3.5rem;
+}
+.dot{
+    display: none;
+}
+.team-header h4{
+    margin-bottom: 1rem;
+    font-weight: 100;
+    font-size: 14px;
+}
+.team-header h2{
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 100;
+    max-width: 90%;
+    width: 450px;
+    padding: 0 1rem;
+    margin: 0 auto 4rem auto;
+}
+.zuri-group{
+    padding: 1.5rem 0;
+}
+.training-container, .internship-container, .talent-container{
+    background-color: var(--color-neutral);
+    padding: 3.5rem 2rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.training img, .internship img, .talent img{
+    margin-bottom: 3rem;
+}
+.training p, .internship p, .talent p{
+    line-height: 24px;
+    margin-bottom: 1.5rem;
+}
 
 @media (min-width: 768px){
     .hero-header{
@@ -130,5 +172,39 @@ a{
         width: 22%;
         position: absolute;
         bottom: 0;
+    }
+
+}
+
+@media(min-width: 992px){
+    .zuri-groups{
+        display: flex;
+        margin: 0 auto;
+    }
+    .team-container{
+        margin-top: 9rem;
+        position: relative;
+    }
+}
+
+@media(min-width: 1200px){
+    .zuri-groups{
+        max-width: 1200px;
+    }
+    .dot{
+        display: block;
+        width: 30%;
+        height: 75%;
+        position: absolute;
+        z-index: -1;
+        top: 15%;
+    }
+    .dot2{
+        left: -5%;
+    }
+
+    .dot1{
+        right: -5%;
+        height: 65%;
     }
 }
