@@ -144,7 +144,7 @@ a{
 .training p, .internship p, .talent p{
     line-height: 24px;
     margin-bottom: 1.5rem;
-    font-size: 13px;
+    font-size: 14px;
     opacity: 0.9;
     height: 150px;
 }
@@ -263,7 +263,7 @@ footer h2{
         position: relative;
     }
     .training p, .internship p, .talent p{
-        font-size: 14px;
+        font-size: 15px;
     }
 }
 
