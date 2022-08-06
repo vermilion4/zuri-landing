@@ -12,3 +12,7 @@ Your site should be responsive across all screen sizes in your browser's develop
 ## Pages done (2/3)
 ![Screenshot (541)](https://user-images.githubusercontent.com/49479307/183259679-ec7790bc-2780-4f19-90a0-5ae3cb3956a6.png)
 ![Screenshot (540)](https://user-images.githubusercontent.com/49479307/183259690-8975d7cb-2849-4caf-b7ed-e41e2da903e6.png)
+
+## Page 3 (in progress)
+
+![Screenshot (542)](https://user-images.githubusercontent.com/49479307/183267396-7bceb63c-37c0-40c1-bacb-bc0c192cf9e7.png)
