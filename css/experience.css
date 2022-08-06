@@ -171,9 +171,6 @@ header{
     grid-row-gap: 0.8rem;
     margin-bottom: 2rem;
 }
-.talents-workplace{
-    grid-template-columns: repeat(2, 1fr);
-}
 .skill-card{
     padding: 1.5rem 1rem;
     box-shadow: 0 8px 30px hsla(0,0%,48%,.16)!important;
@@ -305,9 +302,6 @@ header{
 @media(min-width: 1200px){
     .skill-card{
         width: max-content;
-    }
-    .skills-needed{
-        grid-template-columns: repeat(5, 1fr);
     }
     .skills-needed{
         grid-template-columns: repeat(6, 1fr);
