@@ -6,11 +6,11 @@
 
 @font-face {
     font-family: 'Averta';
-    src: url(AvertaDemo/AvertaDemo-Regular.otf);
+    src: url(../fonts/AvertaDemo/AvertaDemo-Regular.otf);
 }
 @font-face {
     font-family: 'AvertaBold';
-    src: url(AvertaDemo/AvertaDemo-ExtraBoldItalic.otf);
+    src: url(../fonts/AvertaDemo/AvertaDemo-ExtraBoldItalic.otf);
 }
 html {
     scroll-behavior: smooth;
