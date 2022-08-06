@@ -164,6 +164,7 @@ header{
     margin-top: 4rem;
     max-width: 1200px;
     margin: auto;
+    position: relative;
 }
 .skills-section img{
     display: none;
@@ -171,6 +172,7 @@ header{
 .skills-section h2{
     margin-bottom: 3rem;
     font-size: 28px;
+    opacity: 0.9;
     font-family: 'GraphikSemiBold', sans-serif;
 }
 .skills-needed, .talents-workplace{
@@ -356,6 +358,9 @@ header{
         flex-direction: row;
         text-align: left;
     }
+    .world-impact-image{
+        padding-left: 10%;
+    }
     .hero-flex-text, .hero-image, .world-impact-text, .world-impact-image{
         flex: 50%;
     }
@@ -389,12 +394,9 @@ header{
     .skills-section img{
         display: block;
         position: absolute;
-        right: -150px;
-        bottom: -40px;
-        width: 250px;
-    }
-    .curve-cont{
-        position: relative;
+        right: 0;
+        top: 40%;
+        width: 30%;
     }
     .talent-card{
         flex: 25%;
@@ -410,7 +412,7 @@ header{
     text-align: left;
 }
 .hero-image, .world-impact-image{
-    padding-left: 10%;
+    padding-left: 15%;
 }
 .experience-hero p{
     width: 80%;
@@ -423,6 +425,9 @@ header{
 }
 .skill-card{
     font-size: 16px;
+}
+.world-impact-text, .skills-section, .hero-flex-text{
+    padding-left: 5%;
 }
 }
 
@@ -439,7 +444,4 @@ header{
     .hero-image img, .world-impact-image img{
         width: 95%;
         }
-    .hero-image, .world-impact-image{
-        padding-left: 15%;
-    }
 }
