@@ -229,6 +229,7 @@ header{
     background-color: var(--color-white);
     padding: 4rem 1.5rem;
     z-index: 1;
+    border-bottom-right-radius: 25px;
 }
 .talent-card:hover{
     background-color: #000;
@@ -322,7 +323,6 @@ header{
     }
     .talent-card{
         flex: 40%;
-        border-bottom-right-radius: 25px;
     }
     .talent-card p{
         width: 60%;
