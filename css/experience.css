@@ -108,7 +108,7 @@ header{
 
 /* World impact */
 .world-impact{
-    background: url('./assets/asset\ 20.png') no-repeat center center/cover;
+    background: url('../assets/asset\ 20.png') no-repeat center center/cover;
     padding: 5rem 2rem;
 }
 .world-impact-container{
@@ -198,6 +198,9 @@ header{
     }
 }
 @media(min-width: 768px){
+    .experience-hero{
+        min-height: 70vh;
+    }
     .hero-image img, .world-impact-image{
     width: 70%;
     }
@@ -231,8 +234,7 @@ header{
         margin: 0 auto;
     }
     .experience-hero{
-        flex-direction: row;
-        text-align: left;
+        min-height: 100vh;
     }
     .world-impact-container{
         flex-direction: row;
@@ -250,16 +252,6 @@ header{
     }
     .world-impact-image{
         margin-top: 0;
-    }
-    .hero-image{
-        position: relative;
-        left: 10%;
-    }
-    .experience-hero p{
-        width: 80%;
-        margin: 1.5rem auto 2rem 0;;
-        line-height: 20px;
-        font-size: 18px;
     }
     .big-btn{
         padding: 0.8rem 3rem;
@@ -291,6 +283,20 @@ header{
     }
     .talents-workplace{
         grid-template-columns: repeat(8, 1fr);
+    }
+    .experience-hero{
+        flex-direction: row;
+        text-align: left;
+    }
+    .hero-image{
+        position: relative;
+        left: 10%;
+    }
+    .experience-hero p{
+        width: 80%;
+        margin: 1.5rem auto 2rem 0;;
+        line-height: 20px;
+        font-size: 18px;
     }
 }
 
