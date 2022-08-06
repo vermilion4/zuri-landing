@@ -1,0 +1,275 @@
+@font-face {
+    font-family: 'Graphik';
+    src: url(./Graphik-Font-Family/GraphikRegular.otf);
+}
+@font-face {
+    font-family: 'GraphikSemiBold';
+    src: url(./Graphik-Font-Family/GraphikSemibold.otf);
+}
+
+#experience-body{
+    font-family: 'Graphik', sans-serif;
+}
+:root{
+    --color-secondary-2: #161617;
+    --color-tertiary-2: #585858;
+}
+.grey-text{
+    color: var(--color-tertiary-2);
+}
+/* Header */
+header{
+    padding: 0.7rem 1.2rem;
+    position: sticky;
+    min-width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: #fff;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.navbar-links{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+.navbar-links a{
+    display: none;
+    line-height: 22.4px;
+    letter-spacing: 0.16px;
+    color: var(--color-secondary-2);
+    opacity: 0.9;
+}
+.header-btn{
+    border: none;
+    letter-spacing: 0.45712px;
+    font-weight: 100;
+    padding: 0.5rem 2rem;
+    font-size: 17px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Experience Hero */
+.experience-hero{
+    min-height: 100vh;
+    padding-top: 4rem;
+    width: 90%;
+    margin: 4rem auto 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1200px;
+}
+.experience-hero h1{
+    font-size: 40px;
+    font-family: 'GraphikSemiBold', sans-serif;
+    opacity: 0.9;
+}
+.experience-hero h1 span{
+    position: relative;
+}
+.curve{
+    position: absolute;
+    bottom: -20px;
+    right: -30px;
+}
+.experience-hero p{
+    width: 95%;
+    margin: 1.5rem auto 2rem auto;
+    padding: 1rem 0.1rem 0.1rem 0.1rem;
+    line-height: 22.4px;
+    opacity: 0.6;
+}
+.darker-btn{
+    background-color: var(--color-tertiary-2);
+}
+.btn-shadow{
+    box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
+}
+.hero-image{
+    margin-top: 3rem;
+}
+.hero-image img{
+    width: 100%;
+}
+
+/* World impact */
+.world-impact{
+    background: url('./assets/asset\ 20.png') no-repeat center center/cover;
+    padding: 5rem 2rem;
+}
+.world-impact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+.world-impact h2{
+    font-size: 28px;
+    opacity: 0.9;
+    font-family: 'GraphikSemiBold', sans-serif;
+}
+.countries{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.countries img{
+    background-color: #fff;
+    border-radius: 10px;
+    width: 60px;
+    aspect-ratio: 1/1;
+    padding: 10px
+}
+.world-impact-image{
+    margin-top: 4rem;
+}
+.world-impact-image img{
+    width: 100%;
+}
+.country-talent{
+    font-weight: 100;
+    opacity: 0.7;
+}
+
+/* Skills section */
+.skills-section{
+    padding: 5rem 2rem;
+    margin-top: 4rem;
+    max-width: 1200px;
+    margin: auto;
+}
+.skills-section img{
+    display: none;
+}
+.skills-section h2{
+    margin-bottom: 3rem;
+    font-size: 28px;
+    font-family: 'GraphikSemiBold', sans-serif;
+}
+.skills-needed, .talents-workplace{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 0.8rem;
+    margin-bottom: 2rem;
+}
+.skill-card{
+    padding: 1.5rem 1rem;
+    box-shadow: 0 8px 30px hsla(0,0%,48%,.16)!important;
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+@media(max-width: 460px){
+    header{
+        padding: 0.3rem;
+    }
+    #experience-body{
+        font-size: 14px;
+    }
+    .experience-hero-btns{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+@media(min-width: 768px){
+    .hero-image img, .world-impact-image{
+    width: 70%;
+    }
+    .world-impact h2{
+        font-size: 30px;
+        width: 70%;
+        margin: auto;
+        line-height: 40px;
+    }
+    .world-impact-text h4{
+        font-size: 18px;
+    }
+    .talents-workplace{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .skills-section h2{
+        font-size: 30px;
+    }
+}
+
+@media(min-width: 890px){
+    .navbar-links a{
+        display: block;
+    }
+    header{
+        width: 87%;
+        margin: 0 auto;
+    }
+    .experience-hero{
+        flex-direction: row;
+        text-align: left;
+    }
+    .world-impact-container{
+        flex-direction: row;
+        text-align: left;
+    }
+    .hero-flex-text, .hero-image, .world-impact-text, .world-impact-image{
+        flex: 50%;
+    }
+    .countries{
+        justify-content: start;
+    }
+    .world-impact h2{
+        margin: 0;
+        width: 90%;
+    }
+    .world-impact-image{
+        margin-top: 0;
+    }
+    .hero-image{
+        position: relative;
+        left: 10%;
+    }
+    .experience-hero p{
+        width: 80%;
+        margin: 1.5rem auto 2rem 0;;
+        line-height: 20px;
+        font-size: 18px;
+    }
+    .big-btn{
+        padding: 0.8rem 3rem;
+    }
+    .skills-section h2{
+        font-size: 35px;
+        width: 40%;
+        line-height: 40px;
+    }
+}
+
+@media(min-width: 960px){
+    .skills-needed{
+        position: relative;
+        grid-template-columns: repeat(4, 240px);
+    }
+    .skills-section img{
+        display: block;
+        position: absolute;
+        right: -50px;
+        bottom: -30px;
+        width: 200px;
+    }
+    .talents-workplace{
+        grid-template-columns: repeat(6, 152px);
+    }
+}
