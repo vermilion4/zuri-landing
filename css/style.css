@@ -165,7 +165,7 @@ a{
 }
 
 /* Footer */
-footer{
+.index-footer{
     margin: 13rem auto 0 auto;
     width: 90%;
 }
@@ -192,7 +192,7 @@ hr{
     font-size: 15px;
     line-height: 24px;
 }
-footer h2{
+.index-footer h2{
     margin-bottom: 0.5rem;
 }
 .social-links {

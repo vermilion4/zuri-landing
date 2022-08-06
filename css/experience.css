@@ -105,6 +105,12 @@ header{
 .hero-image img{
     width: 100%;
 }
+.header-btn:hover{
+    cursor: pointer;
+}
+.header-btn:hover.btn-shadow{
+    box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 15%) 0px 5px 5px 0px;
+}
 
 /* World impact */
 .world-impact{
@@ -142,7 +148,7 @@ header{
     margin-top: 4rem;
 }
 .world-impact-image img{
-    width: 100%;
+    width: 90%;
 }
 .country-talent{
     font-weight: 100;
@@ -179,7 +185,91 @@ header{
     border-radius: 10px;
     opacity: 0.8;
 }
+.skill-card:hover{
+    margin-bottom: 1rem;
+    margin-top: -1rem;
+    transition: ease-in-out 0.3s;
+}
 
+/* Why hire us */
+.why-us{
+    background-color: rgb(255, 248, 229);
+    padding: 7rem 2rem 2rem 2rem;
+    position: relative;
+    z-index: -1;
+}
+.red-curve{
+    position: absolute;
+    left: 0;
+    top: 35%;
+    z-index: 0;
+    width: 40%;
+}
+.why-us h2{
+    font-size: 28px;
+    font-family: 'GraphikSemiBold', sans-serif;
+    opacity: 0.9;
+    margin-bottom: 5rem;
+}
+.talent-cards{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 1rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 4rem auto;
+    z-index: 1;
+}
+.talent-card{
+    background-color: var(--color-white);
+    padding: 4rem 1.5rem;
+}
+.talent-card:hover{
+    background-color: #000;
+}
+.talent-card:hover p{
+    color: var(--color-white);
+    opacity: 1;
+}
+.talent-card p{
+    line-height: 24px;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    opacity: 0.8;
+    font-size: 15px;
+    color: var(--color-tertiary-2);
+    margin: auto;
+}
+.why-us .experience-hero-btns{
+    margin-bottom: 3rem;
+}
+
+/* Footer */
+.experience-footer{
+    padding: 5rem 2rem 2rem 2rem;
+    background-color: var(--color-secondary-2);
+}
+.experience-footer-container{
+    width: 90%;
+    margin: auto;
+}
+.experience-footer-socials{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.experience-footer-socials img{
+    width: 35px;
+    aspect-ratio: 1/1;
+}
+#small-social{
+    width: 30px;
+    aspect-ratio: 1/1;
+}
 @media(max-width: 360px){
     header{
         padding: 0.3rem;
@@ -198,9 +288,12 @@ header{
     .experience-hero{
         min-height: 70vh;
     }
-    .hero-image img, .world-impact-image{
+    .hero-image img{
     width: 70%;
     }
+    .world-impact-image img{
+        width: 50%;
+        }
     .world-impact h2{
         font-size: 30px;
         width: 70%;
@@ -222,7 +315,33 @@ header{
     .experience-hero p{
         width: 70%;
     }
-
+    .talent-cards{
+        flex-direction: row;
+    }
+    .talent-card{
+        flex: 40%;
+        border-bottom-right-radius: 25px;
+    }
+    .talent-card p{
+        width: 60%;
+    }
+    .experience-footer-left{
+        display: flex;
+        align-items: center;
+        justify-content: space-between
+    }
+    .experience-footer{
+        padding-top: 3rem;
+    }
+    .experience-footer-right hr{
+        display: none;
+    }
+    .experience-footer-right{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 @media(min-width: 890px){
@@ -258,6 +377,9 @@ header{
         width: 40%;
         line-height: 40px;
     }
+    .why-us h2{
+        font-size: 35px;
+    }
 }
 
 @media(min-width: 960px){
@@ -274,6 +396,12 @@ header{
     .curve-cont{
         position: relative;
     }
+    .talent-card{
+        flex: 25%;
+    }
+    .talent-card p{
+        width: 80%;
+    }
 }
 
 @media(min-width: 1100px){
@@ -281,7 +409,7 @@ header{
     flex-direction: row;
     text-align: left;
 }
-.hero-image{
+.hero-image, .world-impact-image{
     position: relative;
     left: 10%;
 }
