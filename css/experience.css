@@ -101,6 +101,7 @@ header{
 }
 .hero-image{
     margin-top: 3rem;
+    overflow-x: hidden;
 }
 .hero-image img{
     width: 100%;
@@ -146,9 +147,11 @@ header{
 }
 .world-impact-image{
     margin-top: 4rem;
+    overflow-x: hidden;
 }
 .world-impact-image img{
     width: 90%;
+
 }
 .country-talent{
     font-weight: 100;
@@ -288,12 +291,9 @@ header{
     .experience-hero{
         min-height: 70vh;
     }
-    .hero-image img{
+    .hero-image img, .world-impact-image img{
     width: 70%;
     }
-    .world-impact-image img{
-        width: 50%;
-        }
     .world-impact h2{
         font-size: 30px;
         width: 70%;
@@ -410,8 +410,7 @@ header{
     text-align: left;
 }
 .hero-image, .world-impact-image{
-    position: relative;
-    left: 10%;
+    padding-left: 10%;
 }
 .experience-hero p{
     width: 80%;
@@ -436,5 +435,11 @@ header{
     }
     .talents-workplace{
         grid-template-columns: repeat(9, 1fr);
+    }
+    .hero-image img, .world-impact-image img{
+        width: 95%;
+        }
+    .hero-image, .world-impact-image{
+        padding-left: 15%;
     }
 }
