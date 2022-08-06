@@ -267,7 +267,7 @@ header{
 @media(min-width: 960px){
     .skill-card{
         width: max-content;
-        font-size: 16px;
+        font-size: 15px;
     }
     .skills-needed{
         grid-template-columns: repeat(5, 1fr);
@@ -304,6 +304,10 @@ header{
 }
 .experience-hero{
     min-height: 100vh;
+}
+.skill-card{
+    width: max-content;
+    font-size: 16px;
 }
 }
 
