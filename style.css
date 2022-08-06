@@ -95,6 +95,7 @@ a{
     padding: 0.9rem 0;
     border: none;
     margin: 0 auto 1.5rem auto;
+    transition: ease-in-out 0.2s;
 }
 .cta-btn a{
     padding: 0.8rem 2rem;
@@ -103,6 +104,17 @@ a{
 .cta-btn-2{
     border: 1px solid var(--color-primary);
     margin-bottom: 0;
+}
+.cta-btn-1:hover, .cta-btn-1:hover a{
+    background-color: var(--color-white);
+    color: var(--color-primary);
+}
+.cta-btn-1:hover{
+    border: 1px solid var(--color-primary);
+}
+.cta-btn-2:hover, .cta-btn-2:hover a{
+    background-color: var(--color-primary);
+    color: var(--color-white);
 }
 
 /* TEAM HEADER SECTION */
