@@ -12,7 +12,10 @@
     font-family: 'AvertaBold';
     src: url(AvertaDemo/AvertaDemo-ExtraBoldItalic.otf);
 }
-
+html {
+    scroll-behavior: smooth;
+  }
+  
 body{
     font-family: 'Averta', sans-serif;
     font-size: 16px;

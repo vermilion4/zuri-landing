@@ -45,6 +45,13 @@ header{
     letter-spacing: 0.16px;
     color: var(--color-secondary-2);
     opacity: 0.9;
+    padding: 1rem;
+}
+.navbar-links a.active{
+    border-bottom: 3px solid var(--color-primary);
+}
+.navbar-links a:hover{
+    background-color: rgb(231, 237, 242);
 }
 .header-btn{
     border: none;
@@ -164,6 +171,9 @@ header{
     grid-row-gap: 0.8rem;
     margin-bottom: 2rem;
 }
+.talents-workplace{
+    grid-template-columns: repeat(2, 1fr);
+}
 .skill-card{
     padding: 1.5rem 1rem;
     box-shadow: 0 8px 30px hsla(0,0%,48%,.16)!important;
@@ -206,6 +216,7 @@ header{
     .skills-section h2{
         font-size: 30px;
     }
+
 }
 
 @media(min-width: 890px){
@@ -258,18 +269,33 @@ header{
 }
 
 @media(min-width: 960px){
+    .skill-card{
+        width: max-content;
+    }
     .skills-needed{
-        position: relative;
-        grid-template-columns: repeat(4, 240px);
+        grid-template-columns: repeat(5, 1fr);
     }
     .skills-section img{
         display: block;
         position: absolute;
-        right: -50px;
-        bottom: -30px;
-        width: 200px;
+        right: -150px;
+        bottom: -40px;
+        width: 250px;
+    }
+    .curve-cont{
+        position: relative;
     }
     .talents-workplace{
-        grid-template-columns: repeat(6, 152px);
+        grid-template-columns: repeat(8, 1fr);
+    }
+}
+
+@media(min-width: 1200px){
+
+    .skills-needed{
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .talents-workplace{
+        grid-template-columns: repeat(9, 1fr);
     }
 }
