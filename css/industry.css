@@ -194,6 +194,7 @@ main {
 }
 .why-us-container {
   margin-top: 2rem;
+  margin-bottom: 5rem;
 }
 .why-us-container img {
   margin-left: 50%;
@@ -208,6 +209,7 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-gap: 2rem;
+  min-width: 300px;
 }
 .card-why-us {
   position: relative;
@@ -251,14 +253,14 @@ main {
   display: flex;
   align-items: center;
 }
-.why-us-text-container img {
-  display: none;
-  width: 100%;
-}
 
 .why-us-img {
+  display: none;
   width: 20%;
   padding-left: 5rem;
+}
+.why-us-img img {
+  width: 100%;
 }
 
 .why-us-subtext {
@@ -270,6 +272,7 @@ main {
   font-size: 24px;
   line-height: 31.2px;
   letter-spacing: 0.22512px;
+  width: 100%;
   font-family: 'GraphikSemiBold', sans-serif;
 }
 /* Outro */
@@ -348,6 +351,11 @@ main {
   flex-basis: 60%;
 }
 
+@media (max-width: 400px) {
+  .cards-wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
 @media (min-width: 768px) {
   .left-hero {
     display: flex;
@@ -373,6 +381,9 @@ main {
   .service {
     width: 250px;
   }
+  .why-us-text {
+    width: 70%;
+  }
 }
 @media (min-width: 991px) {
   .about-wrapper {
@@ -392,6 +403,11 @@ main {
   }
   .main-hero-wire {
     width: 15%;
+  }
+  .why-us-text {
+    font-size: 30px;
+    width: 90%;
+    line-height: 39px;
   }
 }
 @media (min-width: 1200px) {
@@ -429,7 +445,7 @@ main {
     padding: 0.8rem 2rem;
     font-size: 18px;
   }
-  .why-us-text-container img {
+  .why-us-img {
     display: block;
   }
   .why-us-text-container span {
